@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WhatsApp Sticker Gallery</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">
+          <span class="quote">"</span>
+          <span class="animated-title" aria-live="polite">
+            <span id="typed" class="typed" aria-hidden="false"></span>
+            <span id="sep" class="separator sep-whatsapp">&gt;</span>
+          </span>
+          <span class="quote">"</span>
+        </h1>
+        <p class="site-desc">Browse, preview, and download your favorite stickers. Click any sticker to preview and download it.</p>
+        <div class="controls">
+          <input id="search" class="search" type="search" placeholder="Search by name or tag..." aria-label="Search stickers" />
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="gallery" class="gallery" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer"><span id="footer-typed" class="typed" aria-live="polite">Created By Devgghya Kulshrestha "Devu"</span></footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+        <div class="modal-body">
+          <img id="modal-image" src="" alt="Sticker preview" />
+          <div class="modal-info">
+            <h3 id="modal-title"></h3>
+            <p id="modal-tags" class="tags"></p>
+            <a id="modal-download" class="btn" download>Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/stickers-data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
